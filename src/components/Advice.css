@@ -1,0 +1,22 @@
+#advice {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    user-select: none;
+    -webkit-user-select: none;
+    width: fit-content;
+    background-color: none;
+    margin: 0;
+    color: var(--white-color);
+}
+
+#adviceDisplay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    cursor: pointer;
+}
