@@ -42,9 +42,9 @@ function App() {
     })
 })
 
-  typewriter(document.getElementById("welcome"))    // behaves weird in dev because React.StrictMode is double-firing useEffect -> removed in build
-
-  });
+  typewriter(document.getElementById("welcome"))    // still buggy...
+    console.log("triggered?")
+  }, []);
 
   return (
     <div className="App">
@@ -66,7 +66,7 @@ function App() {
                         werde 2023 mein Abitur schreiben 
                     </h1>
                     <h1 className="accentFont">
-                        und plane danach mein <a className="link" href="https://www.nordakademie.de/duales-studium">duales Studium</a> anzutreten
+                        und plane, danach mein <a className="link" href="https://www.nordakademie.de/duales-studium">duales Studium</a> anzutreten
                     </h1>
                     <h1 className="smallText">Weiter zu 'Meine Erfahrungen'</h1>
                 </div>
@@ -100,9 +100,9 @@ function App() {
                 </div>
             </Popup>
             <Popup PopupName="Java" currentPopup={currentPopup} setCurrentPopup={setCurrentPopup}>
-                <div class="TextWrapper">
+                <div className="TextWrapper">
                     <h1 className="accentFont infoFont">
-                        Zurzeit versuche ich mich durch simples Minecraft-Modding Java anzunähern und dabei meine Kenntnisse zur Objekt-Orientierten-Programmierung aufzufrischen und zu verbessern
+                        Zurzeit versuche ich mich durch simples Minecraft-Modding Java anzunähern und dabei meine Kenntnisse zur Objektorientierten-Programmierung aufzufrischen und zu verbessern
                     </h1>
                 </div>
             </Popup>
